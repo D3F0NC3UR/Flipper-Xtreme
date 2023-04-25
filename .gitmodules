@@ -34,3 +34,6 @@
 [submodule "lib/heatshrink"]
 	path = lib/heatshrink
 	url = https://github.com/flipperdevices/heatshrink.git
+[submodule "assets/resources/subghz/Flipper-Zero-Sub-GHz-Jamming-Files"]
+	path = assets/resources/subghz/Flipper-Zero-Sub-GHz-Jamming-Files
+	url = https://github.com/SHUR1K-N/Flipper-Zero-Sub-GHz-Jamming-Files

@@ -73,7 +73,9 @@ struct SubGhzTxRx {
     SubGhzTxRxState txrx_state;
     SubGhzHopperState hopper_state;
     SubGhzSpeakerState speaker_state;
-    SubGhzStarLineIgnoreState starline_state;
+    bool ignore_starline;
+    bool ignore_auto_alarms;
+    bool ignore_magellan;
     uint8_t hopper_timeout;
     uint8_t hopper_idx_frequency;
     SubGhzRxKeyState rx_key_state;
@@ -128,6 +130,9 @@ struct SubGhz {
 
     SubGhzDecodeRawState decode_raw_state;
     SubGhzFileEncoderWorker* decode_raw_file_worker_encoder;
+
+    bool fav_timeout;
+    FuriTimer* fav_timer;
 
     void* rpc_ctx;
 };
